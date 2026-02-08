@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Електронний гаманець</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Електронний гаманець</h2>
+
+      <div class="card">
+        <h4>Поповнення Wallet 1</h4>
+        <div class="row">
+          <input id="depositAmount" type="number" placeholder="Сума" />
+          <button onclick="ui.deposit()">Поповнити</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Переказ Wallet 1 → Wallet 2</h4>
+        <div class="row">
+          <input id="sendAmount" type="number" placeholder="Сума" />
+          <button onclick="ui.send()">Відправити</button>
+        </div>
+      </div>
+
+      <div class="card row">
+        <select id="withdrawWallet">
+          <option value="1">Wallet 1</option>
+          <option value="2">Wallet 2</option>
+        </select>
+
+        <input id="withdrawAmount" type="number" placeholder="Сума" />
+        <button onclick="ui.withdraw()">Зняти</button>
+      </div>
+
+      <div class="card">
+        <button class="secondary" onclick="ui.showBalances()">
+          Показати баланси
+        </button>
+      </div>
+
+      <h3>Лог подій</h3>
+      <div class="log" id="log"></div>
+    </div>
+
+    <script src="assets/js/Wallet.js"></script>
+    <script src="assets/js/WalletRepository.js"></script>
+    <script src="assets/js/TransactionLog.js"></script>
+    <script src="assets/js/WalletTransactionScript.js"></script>
+    <script src="assets/js/WalletUIController.js"></script>
+    <script src="assets/js/init.js"></script>
+  </body>
+</html>
