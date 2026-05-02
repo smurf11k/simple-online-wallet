@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 # Simple Wallet Transaction Script
 
 This is a small interactive web application demonstrating a **Transaction Script** pattern for an electronic wallet system. Users can **deposit**, **withdraw**, and **transfer money** between wallets, with transaction validation and logging.
